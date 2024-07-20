@@ -9,46 +9,53 @@ import bookmarks from "../Assets/icons/bookmarks.svg"
 import lists from "../Assets/icons/lists.svg"
 import profile from "../Assets/icons/profileoutline.svg"
 import more from "../Assets/icons/more.svg"
-import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
     return (
         <div className="pl-[12rem] pt-12 flex flex-col justify-center gap-8 w-[30rem] max-w-[30rem]">
             <FontAwesomeIcon icon={faTwitter} className="text-[#1D9BF0] w-8 h-8" />
-            <div className="flex flex-row gap-4">
+
+            <button className="flex flex-row gap-4 items-center">
                 <img src={homeicon} />
-                <p>Home</p>
-            </div>
+                <p className="font-semibold">Home</p>
+            </button>
 
-            <div className="flex flex-row gap-4">
+            <button className="flex flex-row gap-4 items-center">
                 <img src={explore} />
-                <p>Explore</p>
-            </div>
+                <p className="font-semibold">Explore</p>
+            </button>
 
-            <div className="flex flex-row gap-4">
+            <button className="flex flex-row gap-4 items-center">
                 <img src={notifications} />
-                <p>Notifications</p>
-            </div>
-            <div className="flex flex-row gap-4">
+                <p className="font-semibold">Notifications</p>
+            </button>
+
+            <button className="flex flex-row gap-4 items-center">
                 <img src={messages} />
-                <p>Messages</p>
-            </div>
-            <div className="flex flex-row gap-4">
+                <p className="font-semibold">Messages</p>
+            </button>
+
+            <button className="flex flex-row gap-4 items-center">
                 <img src={bookmarks} />
-                <p>Bookmarks</p>
-            </div>
-            <div className="flex flex-row gap-4">
+                <p className="font-semibold">Bookmarks</p>
+            </button>
+
+            <button className="flex flex-row gap-4 items-center">
                 <img src={lists} />
-                <p>Lists</p>
-            </div>
-            <div className="flex flex-row gap-4">
+                <p className="font-semibold">Lists</p>
+            </button>
+
+            <button className="flex flex-row gap-4 items-center">
                 <img src={profile} />
-                <p>Profile</p>
-            </div>
-            <div className="flex flex-row gap-4">
+                <p className="font-semibold">Profile</p>
+            </button>
+
+            <button className="flex flex-row gap-4 items-center">
                 <img src={more} />
-                <p>More</p>
-            </div>
+                <p className="font-semibold">More</p>
+            </button>
+
+            <button className="bg-[#1D9BF0] text-white text-lg font-semibold border rounded-3xl w-[12rem] p-2 h-12">Tweet</button>
 
         </div>
     )
