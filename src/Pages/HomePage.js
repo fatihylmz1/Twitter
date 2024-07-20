@@ -5,7 +5,7 @@ import { Signup } from "./Signup";
 export const HomePage = () => {
     return (
         <div>
-            <Signup />
+            <Navbar />
         </div>
     )
 }
